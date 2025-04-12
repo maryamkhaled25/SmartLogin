@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Login System</title>
+
+    
+    <link rel="icon" href="./images/favicon_logoai/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+
+
+
+
+<!-------------------------- Sign-in (login) page ------------------->
+
+<body class="d-flex">
+
+
+    <div class="container myCont2 py-4 ">
+
+        
+        <div class="row align-items-center justify-content-center">
+            
+            <div class="col-8">
+
+                <div class="item item2">
+                    <div class="card mycard my-5">
+
+                        <h1 class="my-5 mx-auto">Smart Login System</h1>
+                        
+                        <!-- Valid message -->
+                        <div id="validMsgLogin" class=" d-none notfound-p mx-auto">
+                            <p  class= "p-3 mx-auto text-bg-danger rounded-2 d-flex justify-content-between align-items-center">
+                                All inputs must be valid
+                                <i class="fa-solid fa-circle-exclamation exclamination"></i>
+                            </p>
+                        </div>
+
+                        <div id="notfoundMsgLogin" class="notfound-p d-none mx-auto">
+                            <p  class= " p-3 mx-auto text-bg-danger rounded-2 d-flex justify-content-between align-items-center">
+                                Email not found , Create new account.
+                                <i class="fa-solid fa-circle-exclamation exclamination"></i>
+                            </p>
+                        </div>
+
+
+                        <!-- Email -->
+                        <div class="form-floating my-3 mx-5">
+                            <input type="email" class="form-control" id="loginEmail" oninput="validInputLogin(this,emailMsgLogin)" placeholder="Enter your email">
+                            <label for="loginEmail">Email</label>
+                            <p id="emailMsgLogin" class="d-none ps-2 text-danger fw-bold">Email should contain @ and gmail, yahoo or outlook,end with .com</p>
+                        </div>
+
+
+                          <!-- Password -->
+                        <div class="form-floating mx-5">
+                            <input type="password" class="form-control" id="loginPassword" oninput="validInputLogin(this,passwordMsgLogin)" placeholder="Enter your password">
+                            <label for="loginPassword">Password</label>
+                            <p id="passwordMsgLogin" class="d-none ps-2 text-danger fw-bold">Password should be at least 5, mix of characters and numbers</p>
+                        </div>
+
+                        <button onclick="searchUser()" class="myBtn2 btn btn-blue mt-4 w-50 mx-auto">Submit</button>
+                        <p class="text-center mt-3 mb-5">Don't have an account? <a href="./index.html">Create Account</a></p>
+                    </div>
+                </div>
+            </div>
+
+        
+        </div>
+
+
+    </div>
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/login.js"></script>
+</body>
+
+</html>
+

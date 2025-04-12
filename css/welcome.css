@@ -1,0 +1,102 @@
+
+body{
+    background-image: linear-gradient(to right top, #3d87c7, #619cd1, #81b0da, #a0c5e4, #c0daee);
+    height: 100vh;
+    margin: 0;
+   
+}
+
+
+/* --------------------------------------------- */
+/*  ! Nav */
+
+.logo{
+    color: white;
+    font-family: "Righteous", sans-serif;
+    font-size: 30px !important;
+    margin-left: 112px !important;
+    letter-spacing: 2px;
+
+}
+
+.logBtn{
+    margin-right: 112px !important;
+    border: none !important;
+    color: white;
+    font-family: "Righteous", sans-serif;
+    transition: all 0.5s;
+    letter-spacing: 2px;
+
+    
+    
+}
+
+.logBtn:hover{
+    background-color: white;
+    color: #3d87c7;
+}
+
+
+
+
+
+/* --------------------------------------------- */
+/* ! Card */
+
+.card {
+     
+    background-color: transparent;
+    font-family: "Poppins", sans-serif;
+    animation: fadeIn 1s ease-in-out;
+
+}
+
+
+
+.welcome-p{
+    color: white;
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+
+
+.welcome-p span{
+    font-weight: 500;
+    border-bottom: 5px dashed white ;
+    margin-right: 8px;
+    padding-bottom: 5px;
+
+}
+
+.welcome-p p{
+    display: inline;
+}
+
+.card h4{
+    color: white;
+    letter-spacing: 2px;
+    display: inline;
+}
+
+
+.card i{
+    font-size: 20px;
+    color: white;
+    display: inline;
+
+}
+
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+

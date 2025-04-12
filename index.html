@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Login System</title>
+
+    
+    <link rel="icon" href="./images/favicon_logoai/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+
+
+
+<!-------------------------- Sign-up page ------------------->
+
+<body class="d-flex">
+
+
+    <div class="container myCont mx-auto py-4 ">
+
+        
+        <div class="row align-items-center justify-content-center g-4">
+            
+            <div class="col-7">
+                <div class="item ">
+                    <div class="card  ms-3 ">
+
+                        <h1 class="my-5 mx-auto">Smart Login System</h1>
+                        
+                        <!-- Valid message -->
+                        <div id="validMsg" class=" d-none">
+                            <p  class= "p-3 ms-3 text-bg-danger rounded-2 d-flex justify-content-between align-items-center">All inputs must be valid
+                                <i class="fa-solid fa-circle-exclamation excl"></i>
+                            </p>
+                        </div>
+
+
+                        <!-- Name -->
+                        <div class="form-floating ms-3">
+                            <input type="text" class="form-control" id="signupName" oninput="validInputSignup(this,nameMsg)" placeholder="Enter your name">
+                            <label for="signupName">Name</label>
+                            <p id="nameMsg" class="d-none ps-2 text-danger fw-bold">Name should be at least 3 characters, start with capetail letter</p>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="form-floating my-3 ms-3">
+                            <input type="email" class="form-control" id="signupEmail" oninput="validInputSignup(this,emailMsg)" placeholder="Enter your email">
+                            <label for="signupEmail">Email</label>
+                            <p id="emailMsg" class="d-none ps-2 text-danger fw-bold">Email should contain @ and gmail, yahoo or outlook,end with .com</p>
+                        </div>
+
+
+                        <!-- Password -->
+                        <div class="form-floating ms-3">
+                            <input type="password" class="form-control" id="signupPassword" oninput="validInputSignup(this,passwordMsg)" placeholder="Enter your password">
+                            <label for="signupPassword">Password</label>
+                            <p id="passwordMsg" class="d-none ps-2 text-danger fw-bold">Password should be at least 5, mix of characters and numbers</p>
+                        </div>
+
+                        <button onclick="createUser()" class="myBtn btn btn-blue mt-4 w-50 mx-auto">Submit</button>
+                        <p class="text-center mt-3">You have an account? <a href="./login.html">Sign In</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-5 ps-4">
+                <div class="item ps-4">
+                    <img src="./images/bg-sign.jpg" class="w-100 " alt="signup">
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
+
+
+
+<!--
+
+font-family: "Poppins", sans-serif;
+font-family: "Montserrat", sans-serif; 
+font-family: "Righteous", sans-serif;
+font-family: "Pacifico", cursive;
+
+
+-->

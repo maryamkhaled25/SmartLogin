@@ -1,0 +1,31 @@
+
+
+/* ------------------------------- */
+/* Signin (login) page */
+
+.myCont2{
+    margin-top: 50px;
+}
+
+
+
+.myBtn2{
+    background-color: #3D87C7;
+    color: white;
+}
+
+.myBtn2:hover{
+    border: 1px solid #3D87C7;
+    color: #3D87C7;
+}
+
+.item2{
+    box-shadow: 0px 0px 7px 5px #f0f2f5;
+    /* padding: 50px !important; */
+}
+
+
+
+.notfound-p{
+    width: 88% !important;
+}
